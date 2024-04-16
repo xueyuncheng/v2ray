@@ -1,0 +1,6 @@
+s4-outheart.lol, www.s4-outheart.lol {
+    file_server browse {
+        root /usr/share/caddy
+    }
+    reverse_proxy /world v2ray:8001 
+}

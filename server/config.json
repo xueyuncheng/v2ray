@@ -1,0 +1,28 @@
+{
+    "log" : {
+        "loglevel": "error"
+    },
+    "inbounds":[{
+        "port": 8001,
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+                {
+                    "id": "",
+                    "level": 1,
+                    "alterId": 64
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "wsSettings": {
+                "path": "/world"
+            }
+        }
+    }],
+    "outbounds": [{
+        "protocol": "freedom",
+        "settings": {}
+    }]
+}
